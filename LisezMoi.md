@@ -22,22 +22,21 @@ Seuls les résidents français majeurs sont autorisés à créer un compte.
 1. Cloner le dépôt :
    ```bash
    git clone https://github.com/MarouaneRom/api-user.git
-   
 
+2. Aller dans le dossier racine du projet :
+ ```bash 
+   cd french-users-api 
+   ```
 
+3. Construire le projet avec Maven:
+```bash
+   mvn clean install 
+   ```
 
-Aller dans le dossier racine du projet :
-2. ```bash
-   cd french-users-api
-
-Construire le projet avec Maven:
-3. ```bash
-   mvn clean install
-
-Démarrer l'application Spring Boot:
-4. ```bash
+4. Démarrer l'application Spring Boot:
+ ```bash
    mvn spring-boot:run
-
+```
 # Comment utiliser l'API
 ## URL de base
 ### Tous les endpoints sont disponibles à l'adresse suivante :`` http/localhost/8080``

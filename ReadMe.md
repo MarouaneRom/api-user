@@ -22,18 +22,20 @@ Only adult French residents are allowed to create an account.
    ```bash
    git clone https://github.com/MarouaneRom/api-user.git
 
-   
-Go to the root folder of the project:
-2. ```bash
-   cd french-users-api
+2. Go to the root folder of the project:
+ ```bash 
+   cd french-users-api 
+   ```
 
-Build the project using Maven:
-3. ```bash
-   mvn clean install
+3. Build the project using Maven:
+```bash
+   mvn clean install 
+   ```
 
-Start the Spring Boot application:
-4. ```bash
+4. Start the Spring Boot application:
+ ```bash
    mvn spring-boot:run
+```  
 
 # How to Use the API
 ## Base URL
