@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "a2d4a8ec-0fb9-4a2c-86ee-5f0258b311c5",
+		"name": "French Users API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43454651",
+		"_collection_link": "https://marouane-2159590.postman.co/workspace/faaa8a59-8eb1-4b29-84b3-92476dbd326c/collection/43454651-a2d4a8ec-0fb9-4a2c-86ee-5f0258b311c5?action=share&source=collection_link&creator=43454651"
+	},
+	"item": [
+		{
+			"name": "New user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jean Dujardin\",\r\n  \"birthdate\": \"1990-05-15\",\r\n  \"country\": \"France\",\r\n  \"phoneNumber\": \"+33123456789\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New user No gender No Phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jean Dujardin\",\r\n  \"birthdate\": \"1990-05-15\",\r\n  \"country\": \"France\",\r\n  \"phoneNumber\": \"+33123456789\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New user < 18 years",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Another new user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List all users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get one user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete one user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New user no French resident",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New no country user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jean Dujardin\",\r\n  \"birthdate\": \"1990-05-15\",\r\n  \"country\": \"France\",\r\n  \"phoneNumber\": \"+33123456789\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New no name user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jean Dujardin\",\r\n  \"birthdate\": \"1990-05-15\",\r\n  \"country\": \"France\",\r\n  \"phoneNumber\": \"+33123456789\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New no birthdate user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jean Dujardin\",\r\n  \"birthdate\": \"1990-05-15\",\r\n  \"country\": \"France\",\r\n  \"phoneNumber\": \"+33123456789\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New user but exist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jean Dujardin\",\r\n  \"birthdate\": \"1990-05-15\",\r\n  \"country\": \"France\",\r\n  \"phoneNumber\": \"+33123456789\",\r\n  \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
